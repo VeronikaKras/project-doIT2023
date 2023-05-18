@@ -15,13 +15,7 @@
 @import url('./thank-you.css');
 
 :root {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  line-height: 1.29;
-  font-weight: 400;
 
-  color: rgba(255, 255, 255, 1);
-  background-color:rgba(174, 19, 50, 1);
 --red-color: rgba(174, 19, 50, 1);
 --black-color: rgba(0, 0, 0, 1);
 --green-color: rgba(164, 203, 102, 1);
@@ -29,6 +23,15 @@
   
 }
 
+body {
+  font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.29;
+    font-weight: 400;
+  
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(174, 19, 50, 1);
+}
 @media screen and (min-width:375px) and (max-width:767px) {
   .container {
     width: 335px;
