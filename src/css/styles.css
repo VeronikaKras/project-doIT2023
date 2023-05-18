@@ -15,17 +15,18 @@
 @import url('./thank-you.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  color: rgba(255, 255, 255, 1);
+  background-color:rgba(174, 19, 50, 1);
+--red-color: rgba(174, 19, 50, 1);
+--black-color: rgba(0, 0, 0, 1);
+--green-color: rgba(164, 203, 102, 1);
+--yellow-color:rgba(245, 206, 19, 1);
+  
 }
+
+
