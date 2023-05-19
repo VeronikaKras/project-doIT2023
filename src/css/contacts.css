@@ -1,0 +1,6 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  outline: 2px solid white;
+  outline-offset: -2px;
+}
