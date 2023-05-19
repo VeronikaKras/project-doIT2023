@@ -1,0 +1,119 @@
+.work {
+  letter-spacing: -0.04em;
+}
+.work-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  margin-bottom: 14px;
+}
+@media only screen and (min-width: 768px) {
+  .work-title {
+    font-size: 40px;
+    line-height: 1.1;
+
+    max-width: 624px;
+    margin: 0 auto;
+  }
+}
+.work-text {
+  text-align: center;
+
+  max-width: 509px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.work-items-title {
+  font-size: 18px;
+  line-height: 1.33;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  min-width: 136px;
+  height: 48px;
+  border-radius: 200px;
+}
+.work-items-title-FIrst {
+  background: var(--red-color);
+}
+
+.work-items-title-Second {
+  background: var(--green-color);
+}
+.work-items-title-Third {
+  background: var(--yellow-color);
+}
+
+.work-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+  margin-bottom: 44px;
+}
+@media only screen and (min-width: 768px) {
+  .work-list {
+    gap: 24px;
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .work-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.work-items {
+  width: 100%;
+  height: 112px;
+
+  background: var(--white-color);
+  border-radius: 20px;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  padding: 20px;
+  gap: 14px;
+}
+@media only screen and (min-width: 768px) {
+  .work-items {
+    width: 389px;
+    height: 128px;
+  }
+}
+.work-items-text {
+  color: var(--black-color);
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.gif {
+  width: 100%;
+  height: 476px;
+  border-radius: 20px;
+  background-image: url(../img/Fresh-Harvest-Box.gif);
+  background-position: center;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .gif {
+    width: 704px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .gif {
+    width: 860px;
+  }
+}
