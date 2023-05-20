@@ -1,16 +1,76 @@
-<section>
+<section class="contacts-section">
   <div class="container">
-    <h2>Fresh Harvest Box has got you covered</h2>
-    <ul>
-      <li><img src="" alt="" srcset="" width="335" height="476" /></li>
-      <li><img src="" alt="" srcset="" width="344" height="480" /></li>
+    <h2 class="contacts-title">Fresh Harvest Box has got you covered</h2>
+    <ul class="contacts-img-items">
+      <li class="mellon-img">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/contacts-img/mellon_desk@1x.jpg 1x,
+              ./img/contacts-img/mellon_desk@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/contacts-img/mellon_tab@1x.jpg 1x,
+              ./img/contacts-img/mellon_tab@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 320px)"
+            srcset="
+              ./img/contacts-img/mellon_mob@1x.jpg 1x,
+              ./img/contacts-img/mellon_mob@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            src="./img/contacts-img/mellon_desk@1x.jpg"
+            alt="Mellon"
+            loading="lazy"
+            width="792"
+            height="502"
+          />
+        </picture>
+      </li>
+      <li class="blueberry-img">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/contacts-img/blueberry_desk@1x.jpg 1x,
+              ./img/contacts-img/blueberry_desk@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/contacts-img/blueberry_tab@1x.jpg 1x,
+              ./img/contacts-img/blueberry_tab@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            src="./img/contacts-img/blueberry_desk@1x.jpg"
+            alt="Blueberry"
+            loading="lazy"
+            width="400"
+            height="502"
+          />
+        </picture>
+      </li>
     </ul>
-    <p>
+    <p class="contacts-text">
       Our boxes are packed with delicious, nutritious fruits and vegetables,
       perfect for anyone looking to eat healthier or support local farmers.
       Order your box today and start enjoying the best that nature has to offer!
     </p>
-    <form>
+    <form class="contacts-form">
       <label>
         <input type="email" name="user_email" required />
         <button type="submit">Send</button>
