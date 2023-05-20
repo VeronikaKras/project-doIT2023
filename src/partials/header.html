@@ -1,6 +1,6 @@
 <header class="header-page">
   <div class="header-container">
-    <nav >
+    <nav  class="nav-list">
       <ul class="header-nav">
         <li>
           <a class="header-text-nav" href="">How It Works</a>
@@ -23,13 +23,29 @@
         </a>
         <p class="header-text">fresh harvest box</p>
       </li>
-      <li class="icon-cart">
-        <a class="icon-header" href="">
-          <svg width="28" height="28">
-            <use href="../img/icon.svg#icon-uil-cart"></use>
-          </svg>
-        </a>
-      </li>
+     
     </ul>
+    <button  class="icon-cart" type="button">
+      <svg width="28" height="28">
+        <use href="../img/icon.svg#icon-uil-cart"></use></svg>
+    </button>
+    <button
+    class="menu-toggle js-open-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
+    <svg class="menu-toggle-btn" width="24" height="24">
+      <use href="../img/icon.svg#icon-gg_menu-left"></use>
+    </svg>
+  </button>
   </div>
 </header>
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg class="modal-icon" width="24" height="24">
+      <use href="../images/icons.svg#icon-vector"></use>
+    </svg>
+  </button>
+
+  </ul>
+</div>
