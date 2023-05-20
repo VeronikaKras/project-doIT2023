@@ -81,6 +81,7 @@
 }
 @media screen and (min-width: 768px) {
   .icon-cart {
+    padding: 0;
     position: absolute;
     top: 11px;
     right: 32px;
