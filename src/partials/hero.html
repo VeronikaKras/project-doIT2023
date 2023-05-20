@@ -5,10 +5,39 @@
     </h1>
 
     <!------------ Image ------------>
-    <img class="hero-img" src="" alt="" />
-    <!-- <svg class="" width="342" height="544">
-      <use href="./images/icon.svg#icon-Group-34"></use>
-    </svg> -->
+         <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/ 1x,
+              ./img/ 2x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/ 1x,
+              ./img/ 2x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 320px)"
+            srcset="
+              ./img/ 1x,
+              ./img/ 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            src="./img/"
+            alt=""
+            loading="lazy"
+            width=""
+            height=""
+          />
+        </picture>
 
     <!------------ Button ------------>
     <div class="hero-btn-container">
