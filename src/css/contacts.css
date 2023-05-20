@@ -109,6 +109,8 @@
     background-color: transparent;
     width: 292px;
     padding-left: 24px;
+    padding-right: 117px;
+    color: inherit;
   }
   .contacts-email-input::placeholder {
     color: rgba(255, 255, 255, 0.3);
