@@ -17,7 +17,7 @@
     />
     
     <script type="module" crossorigin src="/project-doIT2023/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/project-doIT2023/assets/index-af368a03.css">
+    <link rel="stylesheet" href="/project-doIT2023/assets/index-ac8500a9.css">
   </head>
   <body>
     <header class="header-page">
@@ -75,19 +75,64 @@
     
     
     
-    <section>
+    <section class="contacts-section">
   <div class="container">
-    <h2>Fresh Harvest Box has got you covered</h2>
-    <ul>
-      <li><img src="" alt="" srcset="" width="335" height="476" /></li>
-      <li><img src="" alt="" srcset="" width="344" height="480" /></li>
+    <h2 class="contacts-title">Fresh Harvest Box has got you covered</h2>
+    <ul class="contacts-img-items">
+      <li class="mellon-img">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/project-doIT2023/assets/mellon_desk@1x-cae47953.jpg 1x, /project-doIT2023/assets/mellon_desk@2x-88a5f494.jpg 2x"
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/project-doIT2023/assets/mellon_tab@1x-4cc668e6.jpg 1x, /project-doIT2023/assets/mellon_tab@2x-1cc15577.jpg 2x"
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 320px)"
+            srcset="/project-doIT2023/assets/mellon_mob@1x-00374744.jpg 1x, /project-doIT2023/assets/mellon_mob@2x-2302eabe.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            src="/project-doIT2023/assets/mellon_desk@1x-cae47953.jpg"
+            alt="Mellon"
+            loading="lazy"
+            width="792"
+            height="502"
+          />
+        </picture>
+      </li>
+      <li class="blueberry-img">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/project-doIT2023/assets/blueberry_desk@1x-65b68db5.jpg 1x, /project-doIT2023/assets/blueberry_desk@2x-abf6c722.jpg 2x"
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/project-doIT2023/assets/blueberry_tab@1x-6bae20ee.jpg 1x, /project-doIT2023/assets/blueberry_tab@2x-a7ee64a9.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            src="/project-doIT2023/assets/blueberry_desk@1x-65b68db5.jpg"
+            alt="Blueberry"
+            loading="lazy"
+            width="400"
+            height="502"
+          />
+        </picture>
+      </li>
     </ul>
-    <p>
+    <p class="contacts-text">
       Our boxes are packed with delicious, nutritious fruits and vegetables,
       perfect for anyone looking to eat healthier or support local farmers.
       Order your box today and start enjoying the best that nature has to offer!
     </p>
-    <form>
+    <form class="contacts-form">
       <label>
         <input type="email" name="user_email" required />
         <button type="submit">Send</button>
