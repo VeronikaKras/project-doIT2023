@@ -55,6 +55,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.strawberry-check-modal {
+  background: #f8766b;
+  border-radius: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
