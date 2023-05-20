@@ -82,13 +82,11 @@
 @media screen and (min-width: 768px) {
   .icon-cart {
     position: absolute;
-    margin-right: 32px;
     top: 11px;
     right: 32px;
     display: block;
     border: none;
     background-color: transparent;
-    margin-right: 32px;
   }
   
 }
