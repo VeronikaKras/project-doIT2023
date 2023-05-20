@@ -17,7 +17,7 @@
     />
     
     <script type="module" crossorigin src="/project-doIT2023/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/project-doIT2023/assets/index-ac8500a9.css">
+    <link rel="stylesheet" href="/project-doIT2023/assets/index-5da1f6f3.css">
   </head>
   <body>
     <header class="header-page">
@@ -142,7 +142,151 @@
 </section>
 
     
-    
+    <!---------------------------- Modal Your Order ----------------------------->
+
+<div class="backdrop">
+  <div class="modal">
+    <h2 class="titel-modal">your order</h2>
+    <button type="button" class="close-modal">
+      <svg class="close-icon" width="24" height="24">
+        <use href="/project-doIT2023/assets/icon-e0641ab2.svg#icon-X"></use>
+      </svg>
+    </button>
+    <form class="form-check-modal">
+      <ul class="chek-lists-modal">
+        <li class="strawberry-check-modal">
+          <label for="user-check-strawberry">
+            <p class="titel-check-modal">Strawberry Basket</p>
+            <p class="text-check-modal">Plant</p>
+            <picture>
+              <source
+                srcset="/project-doIT2023/assets/strawberry-basket-b6e0d11e.jpg 1x, /project-doIT2023/assets/strawberry-basket@2x-11b879a2.jpg 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  img/your-order/Tablet-strawberry-basket.jpg    1x,
+                  img/your-order/Tablet-strawberry-basket@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  img/your-order/Mobile-strawberry-basket.jpg    1x,
+                  img/your-order/Mobile-strawberry-basket@2x.jpg 2x
+                "
+                media="(min-width: 375px)"
+              />
+              <img
+                src="img/your-order/Mobile-strawberry-basket.jpg"
+                alt="strawberry"
+              />
+            </picture>
+          </label>
+          <input
+            type="checkbox"
+            id="user-check-strawberry"
+            name="fruits"
+            value="true"
+            class="check-modal"
+          />
+        </li>
+        <li class="apple-check-modal">
+          <label for="user-check-apple">
+            <p class="titel-check-modal">Apple Basket</p>
+            <p class="text-check-modal">Plant</p>
+            <picture>
+              <source
+                srcset="/project-doIT2023/assets/Apple-Basket-a0a19c8e.jpg 1x, /project-doIT2023/assets/Apple-Basket@2x-0d16e253.jpg 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="/project-doIT2023/assets/Tablet-Apple-Basket-f7cb0368.jpg 1x, /project-doIT2023/assets/Tablet-Apple-Basket@2x-9a6910c8.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/project-doIT2023/assets/Mobile-Apple-Basket-34250719.jpg 1x, /project-doIT2023/assets/Mobile-Apple-Basket@2x-6251afed.jpg 2x"
+                media="(min-width: 375px)"
+              />
+              <img src="/project-doIT2023/assets/Mobile-Apple-Basket-34250719.jpg" alt="apple" />
+            </picture>
+          </label>
+          <input
+            type="checkbox"
+            id="user-check-apple"
+            name="fruits"
+            value="true"
+            class="check-modal"
+          />
+        </li>
+        <li class="mix-check-modal">
+          <label for="user-check-mix">
+            <p class="titel-check-modal">Fruits Basket</p>
+            <p class="text-check-modal">Plant</p>
+            <picture>
+              <source
+                srcset="/project-doIT2023/assets/Fruits-Basket-bf444d14.jpg 1x, /project-doIT2023/assets/Fruits-Basket@2x-74946a9a.jpg 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="/project-doIT2023/assets/Tablet-Fruits-Basket-e8873b5d.jpg 1x, /project-doIT2023/assets/Tablet-Fruits-Basket@2x-c7503c8a.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/project-doIT2023/assets/Mobile-Fruits-Basket-a43dc7d4.jpg 1x, /project-doIT2023/assets/Mobile-Fruits-Basket@2x-c91ce994.jpg 2x"
+                media="(min-width: 375px)"
+              />
+              <img src="/project-doIT2023/assets/Mobile-Fruits-Basket-a43dc7d4.jpg" alt="apple" />
+            </picture>
+          </label>
+          <input
+            type="checkbox"
+            id="user-check-mix"
+            name="fruits"
+            value="true"
+            class="check-modal"
+          />
+        </li>
+      </ul>
+      <div class="wrap-input-modal">
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter full name..."
+          required
+          class="input-modal"
+        />
+        <input
+          type="email"
+          name="mail"
+          placeholder="Enter email..."
+          required
+          class="input-modal"
+        />
+        <input
+          type="text"
+          pattern="[0-9]{13,19}"
+          inputmode="numeric"
+          placeholder="Enter card..."
+          required
+          class="input-modal"
+        />
+        <textarea
+          name="comments"
+          placeholder="Enter comments..."
+          class="textarea-modal"
+        ></textarea>
+        <button type="submit" class="button-submit">Submit</button>
+      </div>
+    </form>
+    <picture>
+      <source srcset="" media="" sizes="" type="" />
+      <source srcset="" media="" sizes="" type="" />
+      <img src="" alt="smile-girl" />
+    </picture>
+  </div>
+</div>
+
         <!-----Thank-you----->
     
 
