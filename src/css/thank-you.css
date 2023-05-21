@@ -151,7 +151,7 @@
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
 .icon-thank-you{background-image: linear-gradient(rgba(224, 63, 94, 1),
- rgba(224, 63, 94, 1)),  url("../img/thank-you/t-raspberries@2x.png");
+ rgba(224, 63, 94, 1)),  url("./img/thank-you/t-raspberries@2x.png");
 
 }}
 @media screen and (min-width:768px) {
@@ -161,14 +161,11 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
   /*===============SECTION ONE MOBILE=============*/
 
 
-@media screen and (min-device-pixel-ration: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .icon-thank-you {
-      background-image: linear-gradient(rgba(224, 63, 94, 1),
-      rgba(224, 63, 94, 1)),
-          url("../img/thank-you/m-raspberries@2x.png");
-  }
+  @media screen and (min-width: 376px) and (max-width: 767px) {
+    .icon-thank-you {
+      background-image: linear-gradient(rgba(224, 63, 94, 1), rgba(224, 63, 94, 1)),
+                        url("./img/thank-you/m-raspberries@2x.png");
+      transition: background-image 0.5s ease;}
 
 }
 
@@ -177,7 +174,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
       background-image: linear-gradient(rgba(224, 63, 94, 1),
       rgba(224, 63, 94, 1)),
-          url ("../img/thank-you/m-raspberries@2x.png");}
+          url ("./img/thank-you/m-raspberries.png");}
         .text-thank-you{
           display: flex;
         flex-direction: column;
