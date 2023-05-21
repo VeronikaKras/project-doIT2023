@@ -204,6 +204,9 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 
   transform: rotate(-14deg);
+
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
 }
 .order-button:hover,
 .order-button:focus {
@@ -211,8 +214,6 @@
   background-color: rgba(255, 255, 255, 1);
 
   text-transform: rotate(-14deg);
-
-  /* transition: ; */
 }
 
 @media only screen and (min-width: 768px) {
