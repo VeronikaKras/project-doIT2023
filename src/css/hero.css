@@ -228,6 +228,7 @@
     padding-bottom: 273px;
   }
   .hero-title {
+    left: 191px;
     max-width: 898px;
 
     font-size: 64px;
@@ -235,7 +236,6 @@
   }
   .hero-img,
   .hero-picture {
-    display: block;
     margin: 0 auto;
   }
   .hero-desk {
