@@ -606,10 +606,15 @@
 
     <!-----Thank-you----->
 
-<div class="modal-window-thank-you is-hidden js-overlay-modal">
+<div class="modal-window-thank-you is-hidden">
   <div class="modal-thank-you">
     <div class="modal-window-close">
-      <button type="button" class="close-modal-thank-you" id="js-modal-close">
+      <button
+        type="button"
+        class="close-modal-thank-you"
+        id="js-modal-close"
+        data-target=".modal-window-thank-you"
+      >
         <svg class="close-icon-thank-you" width="28" height="28">
           <use class="" href="/project-doIT2023/assets/icon-0003678c.svg#icon-x-11"></use>
         </svg>
@@ -632,7 +637,7 @@
     </div>
   </div>
 </div>
-<!-- <script>
+<script>
   window.addEventListener('DOMContentLoaded', function () {
     var modalButtons = document.querySelectorAll('.js-open-modal'),
       overlay = document.querySelector('.js-overlay-modal'),
@@ -644,7 +649,7 @@
       modalWindow.style.display = 'none';
     });
   });
-</script> -->
+</script>
 
     <script src="./js/contacts_modal.js"></script>
     <script defer src="./js/mobile-menu.js"></script>
