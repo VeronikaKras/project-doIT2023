@@ -1,13 +1,24 @@
 .container {
   outline: 2px solid white;
   outline-offset: -2px;
-  height: auto;
+  /* height: auto; */
 }
 .contacts-section {
-  padding-top: 133px;
   padding-bottom: 80px;
+  padding-top: 53px;
+}
+.contacts-container {
+  position: relative;
+  padding-top: 53px;
 }
 .contacts-title {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 335px;
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
@@ -15,6 +26,11 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 334px) {
+  .contacts-title {
+    width: 100%;
+  }
 }
 .contacts-img-items {
   display: flex;
@@ -24,9 +40,13 @@
 .mellon-img {
   width: 335px;
   height: 476px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .blueberry-img {
   display: none;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .contacts-text {
   display: none;
@@ -36,10 +56,14 @@
 }
 @media only screen and (min-width: 768px) {
   .contacts-section {
-    padding-top: 223px;
+    padding-top: 64px;
     padding-bottom: 144px;
   }
+  .contacts-container {
+    padding-top: 79px;
+  }
   .contacts-title {
+    width: 648px;
     font-size: 54px;
   }
   .mellon-img {
@@ -54,10 +78,15 @@
   .contacts-img-items {
     margin-bottom: 80px;
   }
+  .contacts-sending-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   .contacts-text {
     display: block;
-    margin: 0 auto;
     text-align: center;
+    margin: 0 auto;
     letter-spacing: -0.04em;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
     max-width: 492px;
@@ -65,14 +94,66 @@
   }
   .contacts-form {
     display: block;
+    margin: 0 auto;
+  }
+  .contacts-email-form {
+    display: flex;
+    position: relative;
+    width: 292px;
+  }
+  .contacts-email-input {
+    width: 292px;
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100px;
+    background-color: transparent;
+    width: 292px;
+    padding-left: 24px;
+    padding-right: 117px;
+    color: inherit;
+  }
+  .contacts-email-input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .contacts-email-input:focus {
+    outline: 1px solid var(--white-color);
+    outline-offset: -1px;
+  }
+  .contacts-email-input:invalid {
+    outline: 1px solid red;
+  }
+  .contacts-email-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 35px;
+    width: 102px;
+    height: 48px;
+    background: var(--green-color);
+    border-radius: 100px;
+    border: 1px solid transparent;
+    font-family: inherit;
+    color: inherit;
+    transition: color var(--transition-dur-and-func),
+      background-color var(--transition-dur-and-func);
+  }
+  .contacts-email-btn:hover,
+  .contacts-email-btn:focus {
+    border: 1px solid var(--green-color);
+    background-color: var(--white-color);
+    color: var(--green-color);
   }
 }
 @media only screen and (min-width: 1280px) {
   .contacts-section {
-    padding-top: 239px;
+    padding-top: 70px;
     padding-bottom: 150px;
   }
+  .contacts-container {
+    padding-top: 89px;
+  }
   .contacts-title {
+    width: 740px;
     font-size: 64px;
   }
   .mellon-img {
