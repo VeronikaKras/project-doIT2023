@@ -229,6 +229,9 @@
   }
   .hero-title {
     max-width: 898px;
+
+    font-size: 64px;
+    line-height: 1;
   }
   .hero-img,
   .hero-picture {
