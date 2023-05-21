@@ -115,6 +115,13 @@
   .contacts-email-input::placeholder {
     color: rgba(255, 255, 255, 0.3);
   }
+  .contacts-email-input:focus {
+    outline: 1px solid var(--white-color);
+    outline-offset: -1px;
+  }
+  .contacts-email-input:invalid {
+    outline: 1px solid red;
+  }
   .contacts-email-btn {
     position: absolute;
     top: 0;
@@ -124,9 +131,17 @@
     height: 48px;
     background: var(--green-color);
     border-radius: 100px;
-    border: transparent;
+    border: 1px solid transparent;
     font-family: inherit;
     color: inherit;
+    transition: color var(--transition-dur-and-func),
+      background-color var(--transition-dur-and-func);
+  }
+  .contacts-email-btn:hover,
+  .contacts-email-btn:focus {
+    border: 1px solid var(--green-color);
+    background-color: var(--white-color);
+    color: var(--green-color);
   }
 }
 @media only screen and (min-width: 1280px) {
