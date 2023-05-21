@@ -149,8 +149,7 @@
   background-color: #E03F5E;
 }
 /*==============SECTION TABLET=============*/
-@media screen and (min-device-pixel-ration:2) and (min-width: 768px) and (max-widht:376)
-,
+@media screen and (min-device-pixel-ration:2) and (min-width: 768px) and (max-width:376px), 
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
 .icon-thank-you{background-image: linear-gradient(rgba(224, 63, 94, 1),
@@ -179,8 +178,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .icon-thank-you {
 
       background-image: linear-gradient(rgba(224, 63, 94, 1),
-      rgba(224, 63, 94, 1)), url("../img/thank-you/m-raspberries@2x.png");}
-      
+      rgba(224, 63, 94, 1)), url("../img/thank-you/m-raspberries.png");}
+
         .text-thank-you{
           display: flex;
         flex-direction: column;
