@@ -1,0 +1,246 @@
+:root {
+  --red-color: rgba(174, 19, 50, 1);
+  --black-color: rgba(0, 0, 0, 1);
+  --green-color: rgba(164, 203, 102, 1);
+  --yellow-color: rgba(245, 206, 19, 1);
+  --white-color: rgba(255, 255, 255, 1);
+
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero {
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+.hero-container {
+  position: relative;
+
+  padding-top: 46px;
+  padding-bottom: 80px;
+}
+
+/* Title */
+.hero-title {
+  position: absolute;
+  top: 56px;
+
+  display: block;
+  text-align: center;
+  max-width: 335px;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* Image */
+.hero-picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 84px;
+}
+
+/* Button */
+.hero-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-btn {
+  position: absolute;
+  top: 560px;
+
+  /* перевірити, чи flex чи block */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  margin: auto;
+  width: 80px;
+  height: 80px;
+
+  color: var(--red-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+
+  transform: rotate(-14deg);
+  background-color: var(--white-color);
+  border-radius: 50%;
+
+  cursor: pointer;
+  transition: color var(--transition-dur-and-func);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--green-color);
+}
+
+.hero-desk {
+  display: block;
+  max-width: 279px;
+  margin: 0 auto 44px auto;
+}
+
+/* Watermelon and strawberries block */
+.hero-fruit {
+  padding-top: 28px;
+  margin: auto;
+  width: 249px;
+  height: 387px;
+
+  border-radius: 500px;
+}
+.hero-fruit-title {
+  display: block;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+}
+.hero-fruit-watermelon {
+  background-color: var(--green-color);
+}
+.hero-fruit-strawberries {
+  background-color: var(--yellow-color);
+}
+.hero-fruit-watermelon .hero-fruit-title {
+  margin-bottom: 61px;
+}
+.hero-fruit-strawberries .hero-fruit-title {
+  margin-bottom: 19px;
+}
+.hero-fruit-text {
+  display: block;
+  text-align: center;
+  max-width: 155px;
+  margin: auto;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+/* #Hashtags block */
+.hero-hashtags-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.hero-hashtags-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+.hero-hashtags-item {
+  display: block;
+  text-align: center;
+  padding: 12px 32px;
+  min-width: 125px;
+
+  border: 1px solid var(--white-color);
+  border-radius: 1000px;
+}
+
+/* Only for mobile screen */
+@media only screen and (max-width: 767px) {
+  .hero-hashtags-item:nth-child(2n) {
+    min-width: 132px;
+  }
+}
+.hero-hashtags-title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+/* -------------------------------------------------------------- */
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    padding-bottom: 144px;
+  }
+  .hero-title {
+    top: 64px;
+
+    max-width: 704px;
+
+    font-size: 50px;
+    line-height: 1.08;
+  }
+  .hero-picture {
+    margin-bottom: 79px;
+  }
+  .hero-btn-container {
+    top: 786px;
+  }
+  .hero-btn {
+    top: 745px;
+    width: 104px;
+    height: 104px;
+
+    font-size: 28px;
+    line-height: 1;
+  }
+  .hero-desk {
+    margin-left: 0;
+    margin-bottom: 341px;
+  }
+  .hero-hashtags-list {
+    justify-content: flex-end;
+
+    width: 270px;
+    padding: 0;
+  }
+  .hero-hashtags-item {
+    min-width: min-content;
+  }
+  .hero-fruit-watermelon {
+    position: absolute;
+    bottom: 137px;
+    left: 32px;
+
+    margin-left: 0;
+  }
+  .hero-fruit-strawberries {
+    position: absolute;
+    bottom: 272px;
+    right: 32px;
+  }
+}
+
+/* -------------------------------------------------------------- */
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .hero-container {
+    padding-top: 408px;
+    padding-bottom: 246px;
+  }
+  .hero-title {
+    max-width: 898px;
+  }
+  .hero-img {
+    position: absolute;
+    top: 39px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .hero-desk {
+    margin-bottom: 251px;
+  }
+  .hero-fruit-watermelon {
+    bottom: 150px;
+  }
+  .hero-fruit-strawberries {
+    bottom: 374px;
+  }
+}
