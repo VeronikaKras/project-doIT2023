@@ -6,6 +6,7 @@
   align-items: center;
   text-align: center;
   color: var(--red-color);
+  padding: 2px;
 }
 
 .header-text {
@@ -56,10 +57,10 @@
     margin-left: 322px;
   }
 }
-.icon-header {
+/* .icon-header {
   display: flex;
   align-items: center;
-}
+} */
 
 .icon-cart {
   display: none;

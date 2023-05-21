@@ -1,15 +1,13 @@
 /* Thank-you*/
-
-.modal-window-thank-you{
-    display: block;
-    position:fixed;
+.modal-window-thank-you {
+  display: block;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: transparent;
 }
-
 
 .modal-window-close {
   position: absolute;
@@ -58,7 +56,6 @@
   position: absolute;
   width: 12px;
   height: 2px;
-  
   background-color: #FFF;
   transition: background-color 250ms linear;
 }
@@ -75,7 +72,7 @@
   right: 50%;
 }
 
-.modal-thank-you{
+.modal-thank-you {
   position: absolute;
   width: 100%;
   width: 600px;
@@ -86,28 +83,32 @@
   border-radius: 20px;
   transform: translate(-50%, -50%) scaleY(1);
   transition: transfopm 250ms liner;
-  background:#E03F5E ;
+  background: #E03F5E;
 }
-.icon-thank-you{display: flex;
+
+.icon-thank-you {
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
 }
-.text-thank-you{
+
+.text-thank-you {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
   gap: 14px;
-   position: absolute;
+  position: absolute;
   width: 391px;
   height: 130px;
   left: 105px;
   right: 104px;
   top: 335px;
-  }
-.main-text{
-   width: 209px;
+}
+
+.main-text {
+  width: 209px;
   height: 44px;
   font-family: 'DM Sans';
   font-style: normal;
@@ -123,8 +124,10 @@
   flex: none;
   order: 0;
   flex-grow: 0;
- }
- .p-text-thank-you{width: 391px;
+}
+
+.p-text-thank-you {
+  width: 391px;
   height: 72px;
   font-family: 'DM Sans';
   font-style: normal;
@@ -135,81 +138,84 @@
   align-items: center;
   text-align: center;
   letter-spacing: -0.04em;
-   color: #FFFFFF;
+  color: #FFFFFF;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-   flex: none;
+  flex: none;
   order: 1;
-  flex-grow: 0;} 
-  .close-modal-thank-you{
-    background-color: transparent;
+  flex-grow: 0;
+}
+
+.close-modal-thank-you {
+  background-color: transparent;
   border: none;
-  }
-  .close-icon-thank-you:hover::before,
+}
+
+.close-icon-thank-you:hover::before,
 .close-icon-thank-you:hover::after {
   background-color: #E03F5E;
 }
+
 /*==============SECTION TABLET=============*/
-@media screen and (min-device-pixel-ration:2) and (min-width: 768px) and (max-width:376px), 
+@media screen and (min-device-pixel-ration:2) and (min-width: 768px) and (max-widht:376),
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
-.icon-thank-you{background-image: linear-gradient(rgba(224, 63, 94, 1),
- rgba(224, 63, 94, 1)),  url("../img/thank-you/t-raspberries@2x.png");
-
-}}
-@media screen and (min-width:768px) {
-  .icon-thank-you{background-image:url linear-gradient(rgba(224, 63, 94, 1),
-    rgba(224, 63, 94, 1)), ("../img/thank-you/t-raspberries.png");
-  }}
-  /*===============SECTION ONE MOBILE=============*/
-
-
-@media screen and (min-device-pixel-ration: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .icon-thank-you {
-      background-image: linear-gradient(rgba(224, 63, 94, 1),
-      rgba(224, 63, 94, 1)),
-          url("../img/thank-you/m-raspberries@2x.png");
+    background-image: linear-gradient(rgba(224, 63, 94, 1),
+        rgba(224, 63, 94, 1)), url("./img/thank-you/t-raspberries@2x.png");
   }
+}
 
+@media screen and (min-width:768px) {
+  .icon-thank-you {
+    background-image: url linear-gradient(rgba(224, 63, 94, 1),
+        rgba(224, 63, 94, 1)), url("./img/thank-you/t-raspberries.png");
+  }
+}
+
+/*===============SECTION ONE MOBILE=============*/
+@media screen and (min-width: 376px) and (max-width: 767px) {
+  .icon-thank-you {
+    background-image: linear-gradient(rgba(224, 63, 94, 1), rgba(224, 63, 94, 1)),
+      url("./img/thank-you/M-raspberry.png");
+    transition: background-image 0.5s ease;
+  }
 }
 
 @media screen and (max-width: 375px) {
   .icon-thank-you {
+    background-image: linear-gradient(rgba(224, 63, 94, 1),
+        rgba(224, 63, 94, 1)),
+      url ("./img/thank-you/m-raspberries.png");
+  }
 
-      background-image: linear-gradient(rgba(224, 63, 94, 1),
-      rgba(224, 63, 94, 1)), url("../img/thank-you/m-raspberries.png");}
+  .text-thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 14px;
+    position: absolute;
+    width: 295px;
+    height: 150px;
+    left: 20px;
+    top: 236px;
+    margin-bottom: 20px;
+  }
 
-        .text-thank-you{
-          display: flex;
-        flex-direction: column;
-       align-items: center;
-       padding: 0px;
-       gap: 14px;
+  .modal-thank-you {
+    position: relative;
+    width: 335px;
+    height: 426px;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%) scaleY(1);
+    transition: transfopm 250ms linear;
+    background: #E03F5E;
+  }
 
-       position: absolute;
-      width: 295px;
-      height: 150px;
-     left: 20px;
-     top: 236px;
-     margin-bottom: 20px;
-        }
-        .modal-thank-you{
-          
-        position: relative;
-        width: 335px;
-       height: 426px;
-       
-       top: 50%;
-      left: 50%;
-      border-radius: 20px;
-      
-      transform: translate(-50%, -50%) scaleY(1);
-      transition: transfopm 250ms linear;
-      background:#E03F5E ;
-        }
-        .p-text-thank-you{
-          width: 295px;
+  .p-text-thank-you {
+    width: 295px;
     height: 108px;
     font-family: 'DM Sans';
     font-style: normal;
@@ -217,13 +223,13 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     font-size: 14px;
     line-height: 18px;
     display: flex;
-   align-items: center;
-   text-align: center;
-   letter-spacing: -0.04em;
-   color: #FFFFFF;
-   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-   flex: none;
-   order: 1;
-   flex-grow: 0;
-        }
-        }
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+}
