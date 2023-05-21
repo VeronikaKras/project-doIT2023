@@ -151,6 +151,7 @@
   align-items: center;
   gap: 16px;
   margin-top: 124px;
+  padding-bottom: 16px;
 }
 
 .mobile-menu .link {
@@ -158,7 +159,10 @@
   color: var(--white-color);
   text-decoration: none;
 }
-.mobile-btn {
+.mobile-btn { 
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
   background-color: transparent;
 }
