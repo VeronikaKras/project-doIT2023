@@ -8,6 +8,9 @@
   padding-bottom: 80px;
 }
 .contacts-title {
+  display: block;
+  margin: 0 auto;
+  max-width: 335px;
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
@@ -24,9 +27,13 @@
 .mellon-img {
   width: 335px;
   height: 476px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .blueberry-img {
   display: none;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .contacts-text {
   display: none;
@@ -40,6 +47,7 @@
     padding-bottom: 144px;
   }
   .contacts-title {
+    max-width: 648px;
     font-size: 54px;
   }
   .mellon-img {
@@ -73,6 +81,7 @@
     padding-bottom: 150px;
   }
   .contacts-title {
+    max-width: 740px;
     font-size: 64px;
   }
   .mellon-img {
