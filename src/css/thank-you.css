@@ -179,8 +179,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .icon-thank-you {
 
       background-image: linear-gradient(rgba(224, 63, 94, 1),
-      rgba(224, 63, 94, 1)),
-          url ("../img/thank-you/m-raspberries@2x.png");}
+      rgba(224, 63, 94, 1)), url("../img/thank-you/m-raspberries@2x.png");}
+      
         .text-thank-you{
           display: flex;
         flex-direction: column;
