@@ -22,6 +22,7 @@
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 250ms linear;
   background: var(--white-color);
+  overflow: hidden;
   /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2); */
 }
@@ -63,14 +64,23 @@
   align-items: center;
   letter-spacing: -0.04em;
 }
-.text-check-modal {
+
+.label-modal {
   display: block;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: start;
+}
+
+.wrap-card-modal-text {
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 
 .pic-fruits-modal {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: start;
+  /* justify-content: flex-end; */
+  /* flex-direction: start; */
 }
 
 .strawberry-check-modal {
@@ -179,6 +189,12 @@
   color: var(--green-color);
 }
 
+@media screen and (max-width: 768px) {
+  .banana-girl {
+    display: none;
+  }
+}
+
 /* ----------------Check box----------------------- */
 .chek-lists-modal {
   display: flex;
@@ -216,24 +232,13 @@
   }
 
   .chek-lists-modal {
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: row;
     gap: 12px;
   }
 
-  .strawberry-check-modal {
-    height: 250px;
-    width: 200px;
-  }
-
-  .apple-check-modal {
-    height: 250px;
-    width: 200px;
-  }
-
-  .mix-check-modal {
-    height: 250px;
-    width: 200px;
+  .check-check {
+    flex-basis: calc((100% - 24px) / 2);
   }
 
   .wrap-input-modal {
@@ -242,13 +247,9 @@
 
   .banana-girl {
     position: absolute;
-    top: 33%;
+    bottom: 0;
     right: 0;
   }
-
-  /* .smile-girl {
-
-  } */
 }
 
 @media screen and (min-width: 1280px) {
@@ -256,18 +257,9 @@
     max-width: 1280px;
   }
 
-  .strawberry-check-modal {
-    height: 308px;
-    width: 257px;
-  }
-
-  .apple-check-modal {
-    height: 308px;
-    width: 257px;
-  }
-
-  .mix-check-modal {
-    height: 308px;
-    width: 257px;
+  .modal {
+    max-height: 911px;
+    max-width: 891px;
+    padding: 40px;
   }
 }
