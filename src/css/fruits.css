@@ -33,11 +33,16 @@
 
 .fruits-text {
   text-align: center;
-  width: 335px;
+  width: 100%;
 
   margin-bottom: 44px;
   margin-right: auto;
   margin-left: auto;
+}
+@media only screen and (min-width: 375px) {
+  .fruits-text {
+    width: 335px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .fruits-text {
