@@ -166,56 +166,59 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 }
 
 @media screen and (min-width:768px) {
-  .icon-thank-you {
-    background-image: url linear-gradient(rgba(224, 63, 94, 1),
-        rgba(224, 63, 94, 1)), url("./img/thank-you/t-raspberries.png");
-  }
-}
+  .icon-thank-you{background-image:url linear-gradient(rgba(224, 63, 94, 1),
+    rgba(224, 63, 94, 1)), ("../img/thank-you/t-raspberries.png");
+  }}
+  /*===============SECTION ONE MOBILE=============*/
 
-/*===============SECTION ONE MOBILE=============*/
-@media screen and (min-width: 376px) and (max-width: 767px) {
+
+@media screen and (min-device-pixel-ration: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .icon-thank-you {
-    background-image: linear-gradient(rgba(224, 63, 94, 1), rgba(224, 63, 94, 1)),
-      url("./img/thank-you/M-raspberry.png");
-    transition: background-image 0.5s ease;
+      background-image: linear-gradient(rgba(224, 63, 94, 1),
+      rgba(224, 63, 94, 1)),
+          url("../img/thank-you/m-raspberries@2x.png");
   }
+
 }
 
 @media screen and (max-width: 375px) {
   .icon-thank-you {
-    background-image: linear-gradient(rgba(224, 63, 94, 1),
-        rgba(224, 63, 94, 1)),
-      url ("./img/thank-you/m-raspberries.png");
-  }
 
-  .text-thank-you {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 14px;
-    position: absolute;
-    width: 295px;
-    height: 150px;
-    left: 20px;
-    top: 236px;
-    margin-bottom: 20px;
-  }
+      background-image: linear-gradient(rgba(224, 63, 94, 1),
+      rgba(224, 63, 94, 1)),
+          url ("../img/thank-you/m-raspberries@2x.png");}
+        .text-thank-you{
+          display: flex;
+        flex-direction: column;
+       align-items: center;
+       padding: 0px;
+       gap: 14px;
 
-  .modal-thank-you {
-    position: relative;
-    width: 335px;
-    height: 426px;
-    top: 50%;
-    left: 50%;
-    border-radius: 20px;
-    transform: translate(-50%, -50%) scaleY(1);
-    transition: transfopm 250ms linear;
-    background: #E03F5E;
-  }
-
-  .p-text-thank-you {
-    width: 295px;
+       position: absolute;
+      width: 295px;
+      height: 150px;
+     left: 20px;
+     top: 236px;
+     margin-bottom: 20px;
+        }
+        .modal-thank-you{
+          
+        position: relative;
+        width: 335px;
+       height: 426px;
+       
+       top: 50%;
+      left: 50%;
+      border-radius: 20px;
+      
+      transform: translate(-50%, -50%) scaleY(1);
+      transition: transfopm 250ms linear;
+      background:#E03F5E ;
+        }
+        .p-text-thank-you{
+          width: 295px;
     height: 108px;
     font-family: 'DM Sans';
     font-style: normal;
