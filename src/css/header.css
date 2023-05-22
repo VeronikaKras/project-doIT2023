@@ -7,6 +7,8 @@
   text-align: center;
   color: var(--red-color);
   padding: 2px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .header-text {
@@ -87,12 +89,16 @@
     display: block;
     border: none;
     background-color: transparent;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 .icon-vector {
   display: flex;
   align-items: center;
   gap: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .logo-header {
   transition: transform var(--transition-dur-and-func);
