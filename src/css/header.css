@@ -1,31 +1,21 @@
 .header-page {
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 .header-text-nav {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.3;
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: -0.04em;
-  color: #ae1332;
+  color: var(--red-color);
+  padding: 2px;
 }
 
 .header-text {
-  font-family: 'DM Sans';
-  font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.3;
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: -0.04em;
   text-transform: uppercase;
-  color: #ae1332;
+  color: var(--red-color);
 }
 .header-container {
   height: 50px;
@@ -45,7 +35,6 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    padding-left: 32px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -54,7 +43,7 @@
   }
 }
 .header-list {
-  margin-left: 20px;
+  margin-right: auto;
   display: flex;
 }
 @media screen and (min-width: 768px) {
@@ -68,11 +57,10 @@
     margin-left: 322px;
   }
 }
-.icon-header {
+/* .icon-header {
   display: flex;
   align-items: center;
-  gap: 8px;
-}
+} */
 
 .icon-cart {
   display: none;
@@ -80,9 +68,6 @@
 @media screen and (min-width: 768px) {
   .icon-cart {
     padding: 0;
-    position: absolute;
-    top: 11px;
-    right: 32px;
     display: block;
     border: none;
     background-color: transparent;
@@ -91,6 +76,7 @@
 .icon-vector {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 /* mobile menu*/
@@ -112,8 +98,6 @@
   }
 }
 .menu-toggle {
-  position: absolute;
-  right: 20px;
   min-height: 40px;
   display: flex;
   align-items: center;
@@ -140,7 +124,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #ae1332;
+  background-color: var(--red-color);
   z-index: 999;
 
   transform: translateX(100%);
@@ -152,8 +136,10 @@
 }
 
 .menu-container .menu-toggle {
+  position: absolute;
   top: 4px;
-  color: #ae1332;
+  right: 20px;
+  color: var(--red-color);
 }
 
 .mobile-menu {
@@ -166,14 +152,18 @@
   align-items: center;
   gap: 16px;
   margin-top: 124px;
+  padding-bottom: 16px;
 }
 
 .mobile-menu .link {
   display: block;
-  color: #fff;
+  color: var(--white-color);
   text-decoration: none;
 }
-.mobile-btn {
+.mobile-btn { 
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
   background-color: transparent;
 }

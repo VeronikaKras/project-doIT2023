@@ -1,6 +1,8 @@
 <section class="contacts-section">
   <div class="container contacts-container">
-    <h2 class="contacts-title">Fresh Harvest Box has got you covered</h2>
+    <h2 class="contacts-title" id="contacts">
+      Fresh Harvest Box has got you covered
+    </h2>
     <ul class="contacts-img-items">
       <li class="mellon-img">
         <picture>
@@ -74,16 +76,22 @@
       </p>
       <form class="contacts-form">
         <div class="contacts-email-form">
-          <labe>
+          <label>
             <input
               class="contacts-email-input"
               type="email"
               name="user_email"
-              required
               placeholder="Enter email..."
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
             />
-          </labe>
-          <button class="contacts-email-btn" type="submit">Send</button>
+          </label>
+          <button
+            class="contacts-email-btn js-open-modal"
+            data-modal="2"
+            type="submit"
+          >
+            Send
+          </button>
         </div>
       </form>
     </div>
