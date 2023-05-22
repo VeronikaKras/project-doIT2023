@@ -1,18 +1,15 @@
 .fruits-section {
   padding-top: 80px;
-  padding-bottom: 27px;
 }
 
 @media only screen and (min-width: 768px) {
   .fruits-section {
     padding-top: 144px;
-    padding-bottom: 80px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .fruits-section {
     padding-top: 150px;
-    padding-bottom: 80px;
   }
 }
 
@@ -36,11 +33,16 @@
 
 .fruits-text {
   text-align: center;
-  width: 335px;
+  width: 100%;
 
   margin-bottom: 44px;
   margin-right: auto;
   margin-left: auto;
+}
+@media only screen and (min-width: 375px) {
+  .fruits-text {
+    width: 335px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .fruits-text {
@@ -188,8 +190,6 @@
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.04em;
-
-  
 }
 @media screen and (min-width: 768px) {
   .fruits-price {
@@ -197,7 +197,6 @@
     height: 48px;
 
     font-size: 18px;
-
   }
 }
 
