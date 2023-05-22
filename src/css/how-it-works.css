@@ -53,6 +53,12 @@
   border-radius: 200px;
 }
 
+@media only screen and (max-width: 374px) {
+  .work-subtitle {
+    font-size: 16px;
+    min-width: 120px;
+  }
+}
 .work-subtitle-FIrst {
   background: var(--red-color);
 }
