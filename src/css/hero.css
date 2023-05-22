@@ -23,6 +23,7 @@
 .hero-title {
   position: absolute;
   top: 56px;
+  margin: 0 auto;
 
   display: block;
   text-align: center;
@@ -35,8 +36,8 @@
 }
 
 /* Image */
-.hero-picture {
-  display: block;
+.hero-picture,
+.hero-img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 84px;
@@ -177,7 +178,8 @@
     font-size: 50px;
     line-height: 1.08;
   }
-  .hero-picture {
+  .hero-picture,
+  .hero-img {
     margin-bottom: 79px;
   }
   .hero-btn-container {
@@ -207,40 +209,51 @@
   .hero-fruit-watermelon {
     position: absolute;
     bottom: 137px;
-    left: 32px;
+    left: 64px;
 
     margin-left: 0;
   }
   .hero-fruit-strawberries {
     position: absolute;
     bottom: 272px;
-    right: 32px;
-  }
+    right: 64px;
+ }
 }
 
 /* -------------------------------------------------------------- */
 /* Desktop */
 @media only screen and (min-width: 1280px) {
   .hero-container {
-    padding-top: 408px;
-    padding-bottom: 246px;
+    padding-top: 39px;
+    padding-bottom: 273px;
   }
   .hero-title {
+    left: 191px;
     max-width: 898px;
+
+    font-size: 64px;
+    line-height: 1;
   }
-  .hero-img {
-    position: absolute;
-    top: 39px;
-    left: 50%;
-    transform: translateX(-50%);
+  .hero-img,
+  .hero-picture {
+    margin: 0 auto;
   }
   .hero-desk {
-    margin-bottom: 251px;
+    position: absolute;
+    top: 408px;
+    left: 30px;
   }
   .hero-fruit-watermelon {
     bottom: 150px;
+    left: 62px;
   }
   .hero-fruit-strawberries {
     bottom: 374px;
+    right: 62px;
+  }
+  .hero-hashtags-container {
+    position: absolute;
+    bottom: 246px;
+    right: 45px;
   }
 }
