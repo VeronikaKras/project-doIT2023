@@ -148,10 +148,11 @@
   }
 }
 
-.menu-container {
+.menu-container-mobile {
   position: fixed;
   top: 0;
   left: 0;
+  /* width: 100%; */
   width: 100vw;
   height: 100vh;
   background-color: var(--red-color);
@@ -161,11 +162,11 @@
   transition: transform 250ms ease-in-out;
 }
 
-.menu-container.is-open {
+.menu-container-mobile.is-open {
   transform: translateX(0);
 }
 
-.menu-container .menu-toggle {
+.menu-container-mobile .menu-toggle {
   position: absolute;
   top: 4px;
   right: 20px;
