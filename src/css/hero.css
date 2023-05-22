@@ -2,13 +2,11 @@
   padding-top: 56px;
   padding-bottom: 80px;
 
-
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .hero-container {
   position: relative;
 }
-
 
 /* Title */
 .hero-title {
@@ -18,8 +16,7 @@
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 335px;
-
+  width: 100%;
 
   font-weight: 500;
   font-size: 28px;
@@ -27,7 +24,11 @@
   text-align: center;
   text-transform: uppercase;
 }
-
+@media only screen and (min-width: 375px) {
+.hero-title {
+  width: 335px;
+}
+}
 
 /* Image */
 .hero-picture,
@@ -35,23 +36,27 @@
   margin: 0 auto 71px auto;
 }
 
-
 /* Button */
-.hero-btn-container {
-  position: absolute;
-  top: 504px;
-  left: 50%;
-  transform: translate(-50%);
+@media only screen and (min-width: 375px) {
+  .hero-btn-container {
+    position: absolute;
+    top: 504px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+@media only screen and (max-width: 374.99px) {
+  .hero-btn-container {
+    display: none;
+  }
 }
 .hero-btn {
   display: flex;
   text-align: center;
   align-items: center;
 
-
   width: 80px;
   height: 80px;
-
 
   color: var(--red-color);
   font-weight: 500;
@@ -59,11 +64,9 @@
   line-height: 1;
   text-transform: uppercase;
 
-
   transform: rotate(-14deg);
   background-color: var(--white-color);
   border-radius: 50%;
-
 
   cursor: pointer;
   transition: color var(--transition-dur-and-func);
@@ -73,13 +76,11 @@
   color: var(--green-color);
 }
 
-
 .hero-desk {
   display: block;
   max-width: 279px;
   margin: 0 auto 44px auto;
 }
-
 
 /* Watermelon and strawberries block */
 .hero-fruit {
@@ -87,7 +88,6 @@
   padding-bottom: 40px;
   margin: 0 auto;
   width: 249px;
-
 
   border-radius: 500px;
 }
@@ -101,7 +101,6 @@
 .hero-fruit-title {
   display: block;
   text-align: center;
-
 
   font-weight: 400;
   font-size: 12px;
@@ -119,16 +118,13 @@
   max-width: 155px;
   margin: auto;
 
-
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
   text-transform: uppercase;
 }
 
-
 /* #Hashtags block */
-
 
 .hero-hashtags-list {
   display: flex;
@@ -143,11 +139,9 @@
   padding: 12px 32px;
   min-width: 125px;
 
-
   border: 1px solid var(--white-color);
   border-radius: 1000px;
 }
-
 
 /* Only for mobile screen */
 @media only screen and (max-width: 767px) {
@@ -162,7 +156,6 @@
   text-transform: uppercase;
 }
 
-
 /* -------------------------------------------------------------- */
 /* Tablet */
 @media only screen and (min-width: 768px) {
@@ -171,8 +164,8 @@
     padding-bottom: 144px;
   }
   .hero-title {
-    width: 704px;
-
+    width: 714px;
+    top: 9px;
 
     font-size: 50px;
     line-height: 1.08;
@@ -187,7 +180,6 @@
   .hero-btn {
     width: 104px;
     height: 104px;
-
 
     font-size: 28px;
     line-height: 1;
@@ -221,7 +213,6 @@
   }
 }
 
-
 /* -------------------------------------------------------------- */
 /* Desktop */
 @media only screen and (min-width: 1280px) {
@@ -230,8 +221,8 @@
     padding-bottom: 253px;
   }
   .hero-title {
-    width: 898px;
-
+    width: 920px;
+    top: 25px;
 
     font-size: 64px;
     line-height: 1;
