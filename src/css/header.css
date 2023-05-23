@@ -107,6 +107,13 @@
 
 /* mobile menu*/
 
+/* add  menu-mobile-wrap*/
+.menu-mobile-wrap {
+  position: relative;
+  margin: 0 auto;
+  max-width: 375px;
+}
+
 .menu-mobile-logo {
   height: 50px;
   background-color: #fff;
@@ -186,7 +193,7 @@
 }
 .mobile-btn {
   display: flex;
- justify-content: center;
+  justify-content: center;
   border: none;
   background-color: transparent;
 }
