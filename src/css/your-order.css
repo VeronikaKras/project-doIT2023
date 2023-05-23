@@ -14,6 +14,7 @@
   position: absolute;
   width: 100%;
   max-width: 375px;
+  max-height: 903px;
   padding: 20px;
   top: 50%;
   left: 50%;
@@ -21,6 +22,7 @@
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 250ms linear;
   background: var(--white-color);
+  overflow: hidden;
   /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2); */
 }
@@ -59,37 +61,138 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
+  align-items: center;
   letter-spacing: -0.04em;
 }
 
+.label-modal {
+  display: block;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: start;
+}
+
+.wrap-card-modal-text {
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.pic-fruits-modal {
+  /* justify-content: flex-end; */
+  /* flex-direction: start; */
+}
+
 .strawberry-check-modal {
-  width: 100%;
-  height: 119px;
-  padding: 20px 125px 75px 20px;
+  max-height: 119px;
+  flex-basis: auto;
+  padding: 16px 32px 8px 20px;
   background: #f8766b;
   border-radius: 20px;
 }
 
 .apple-check-modal {
-  width: 100%;
-  height: 119px;
-  padding: 20px 125px 75px 20px;
+  max-height: 119px;
+  flex-basis: auto;
+  padding: 16px 32px 8px 20px;
   background: #edd251;
   border-radius: 20px;
 }
 
 .mix-check-modal {
-  width: 100%;
-  height: 119px;
-  padding: 20px 125px 75px 20px;
+  max-height: 119px;
+  flex-basis: auto;
+  padding: 16px 32px 8px 20px;
   background: #9dc262;
   border-radius: 20px;
 }
 
-.img-modal {
-  position: absolute;
-  top: 16px;
-  right: 32px;
+/* ----------------Input-modal--------------------- */
+.input-modal::placeholder {
+  color: black;
+}
+.input-modal:focus {
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+.input-modal {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  font-weight: 400;
+  padding-left: 24px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: black;
+  width: 100%;
+  height: 46px;
+  margin-bottom: 14px;
+  opacity: 0.3;
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 100px;
+}
+
+.textarea-modal {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  color: black;
+  width: 100%;
+  height: 132px;
+  border: 1px solid black;
+  background-color: transparent;
+  opacity: 0.3;
+  border-radius: 20px;
+  resize: none;
+  padding: 14px 24px;
+  margin-bottom: 20px;
+}
+
+.textarea-modal::placeholder {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  color: black;
+}
+
+.textarea-modal:focus {
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+.input-modal:invalid {
+  outline: 1px solid red;
+}
+
+.button-submit {
+  display: block;
+  padding: 15px 35px;
+  background: var(--green-color);
+  border-radius: 100px;
+  border: 1px solid transparent;
+  font-family: inherit;
+  color: inherit;
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+}
+
+.button-submit:hover,
+.button-submit:focus {
+  border: 1px solid var(--green-color);
+  background-color: var(--white-color);
+  color: var(--green-color);
+}
+
+@media screen and (max-width: 768px) {
+  .banana-girl {
+    display: none;
+  }
 }
 
 /* ----------------Check box----------------------- */
@@ -97,6 +200,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 12px;
+  margin-bottom: 40px;
 }
 
 .check-check {
@@ -122,35 +226,29 @@
   }
 
   .modal {
+    max-height: 853px;
     max-width: 753px;
     padding: 40px;
   }
 
   .chek-lists-modal {
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: row;
     gap: 12px;
   }
 
-  .strawberry-check-modal {
-    height: 250px;
-    width: 200px;
+  .check-check {
+    flex-basis: calc((100% - 24px) / 2);
   }
 
-  .apple-check-modal {
-    height: 250px;
-    width: 200px;
+  .wrap-input-modal {
+    max-width: 360px;
   }
 
-  .mix-check-modal {
-    height: 250px;
-    width: 200px;
-  }
-
-  .img-modal {
+  .banana-girl {
     position: absolute;
-    top: 88px;
-    right: 14px;
+    bottom: 0;
+    right: 0;
   }
 }
 
@@ -159,24 +257,10 @@
     max-width: 1280px;
   }
 
-  .strawberry-check-modal {
-    height: 308px;
-    width: 257px;
-  }
-
-  .apple-check-modal {
-    height: 308px;
-    width: 257px;
-  }
-
-  .mix-check-modal {
-    height: 308px;
-    width: 257px;
-  }
-
-  .img-modal {
-    position: absolute;
-    top: 98px;
-    right: 14px;
+  .modal {
+    max-height: 911px;
+    max-height: 911px;
+    max-width: 891px;
+    padding: 40px;
   }
 }

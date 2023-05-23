@@ -1,6 +1,6 @@
 <!---------------------------- Modal Your Order ----------------------------->
 <!-- 
-<div data-modal class="backdrop">
+<div class="backdrop" data-modal>
   <div class="modal">
     <h2 class="titel-modal">your order</h2>
     <button data-modal-close type="button" class="close-modal">
@@ -11,37 +11,36 @@
     <form class="form-check-modal">
       <ul class="chek-lists-modal">
         <li class="strawberry-check-modal check-check">
-          <label for="user-check-strawberry">
-            <div class="text-wrap-modal">
-              <p class="titel-check-modal">Strawberry Basket</p>
-              <p class="text-check-modal">Plant</p>
-            </div>
-
-            <picture>
+          <div class="wrap-card-modal-text">
+            <h3 class="titel-check-modal">Strawberry Basket</h3>
+            <p class="text-check-modal">Plant</p>
+          </div>
+          <label for="user-check-strawberry" class="label-modal">
+            <picture class="pic-fruits-modal">
               <source
                 srcset="
-                  img/your-order/desck-strawberry@1x.png 1x,
-                  img/your-order/desck-strawberry@2x.png 2x
+                  ./img/your-order/desck-strawberry@1x.png 1x,
+                  ./img/your-order/desck-strawberry@2x.png 2x
                 "
                 media="(min-width: 1280px)"
               />
               <source
                 srcset="
-                  img/your-order/tablet-strawberry@1x.png 1x,
-                  img/your-order/tablet-strawberry@2x.png 2x
+                  ./img/your-order/tablet-strawberry@1x.png 1x,
+                  ./img/your-order/tablet-strawberry@2x.png 2x
                 "
                 media="(min-width: 768px)"
               />
               <source
                 srcset="
-                  img/your-order/strawberry@1x.png 1x,
-                  img/your-order/strawberry@2x.png 2x
+                  ./img/your-order/strawberry@1x.png 1x,
+                  ./img/your-order/strawberry@2x.png 2x
                 "
                 media="(min-width: 375px)"
               />
               <img
-                class="img-modal"
-                src="img/your-order/strawberry@1x.png"
+                class="img-modal-fruits"
+                src="./img/your-order/strawberry@1x.png"
                 alt="strawberry"
               />
             </picture>
@@ -55,34 +54,34 @@
           />
         </li>
         <li class="apple-check-modal check-check">
-          <label for="user-check-apple">
+          <label for="user-check-apple" class="label-modal">
             <p class="titel-check-modal">Apple Basket</p>
             <p class="text-check-modal">Plant</p>
-            <picture>
+            <picture class="pic-fruits-modal">
               <source
                 srcset="
-                  img/your-order/desck-apple@1x.png 1x,
-                  img/your-order/desck-apple@2x.png 2x
+                  ./img/your-order/desck-apple@1x.png 1x,
+                  ./img/your-order/desck-apple@2x.png 2x
                 "
                 media="(min-width: 1280px)"
               />
               <source
                 srcset="
-                  img/your-order/tablet-apple@1x.png 1x,
-                  img/your-order/tablet-apple@2x.png 2x
+                  ./img/your-order/tablet-apple@1x.png 1x,
+                  ./img/your-order/tablet-apple@2x.png 2x
                 "
                 media="(min-width: 768px)"
               />
               <source
                 srcset="
-                  img/your-order/apple@1x.png 1x,
-                  img/your-order/apple@2x.png 2x
+                  ./img/your-order/apple@1x.png 1x,
+                  ./img/your-order/apple@2x.png 2x
                 "
                 media="(min-width: 375px)"
               />
               <img
                 class="img-modal"
-                src="img/your-order/apple@1x.png"
+                src="./img/your-order/apple@1x.png"
                 alt="apple"
               />
             </picture>
@@ -96,28 +95,28 @@
           />
         </li>
         <li class="mix-check-modal check-check">
-          <label for="user-check-mix">
+          <label for="user-check-mix" class="label-modal">
             <p class="titel-check-modal">Fruits Basket</p>
             <p class="text-check-modal">Plant</p>
-            <picture>
+            <picture class="pic-fruits-modal">
               <source
                 srcset="
-                  img/your-order/mix-desck@1x.png 1x,
-                  img/your-order/mix-desck@2x.png 2x
+                  ./img/your-order/mix-desck@1x.png 1x,
+                  ./img/your-order/mix-desck@2x.png 2x
                 "
                 media="(min-width: 1280px)"
               />
               <source
                 srcset="
-                  img/your-order/mix-tablet@1x.png 1x,
-                  img/your-order/mix-tablet@2x.png 2x
+                  ./img/your-order/mix-tablet@1x.png 1x,
+                  ./img/your-order/mix-tablet@2x.png 2x
                 "
                 media="(min-width: 768px)"
               />
               <source
                 srcset="
-                  img/your-order/mix@1x.png 1x,
-                  img/your-order/mix@2x.png 2x
+                  ./img/your-order/mix@1x.png 1x,
+                  ./img/your-order/mix@2x.png 2x
                 "
                 media="(min-width: 375px)"
               />
@@ -168,10 +167,22 @@
         <button type="submit" class="button-submit">Submit</button>
       </div>
     </form>
-    <picture>
-      <source srcset="" media="" sizes="" type="" />
-      <source srcset="" media="" sizes="" type="" />
-      <img src="" alt="smile-girl" />
+    <picture class="banana-girl">
+      <source
+        srcset="
+          ./img/your-order/banan-girl-desk@1x.png 1x,
+          ./img/your-order/banan-girl-desk@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ./img/your-order/banan-girl-tablet@1x.png 1x,
+          ./img/your-order/banan-girl-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img src="./img/your-order/banan-girl-desk@1x.png 1x" alt="smile-girl" />
     </picture>
   </div>
 </div> -->
