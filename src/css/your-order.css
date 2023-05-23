@@ -10,17 +10,17 @@
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-  
+
   /* transition: opacity 250ms linear, visibility 250ms linear; */
 }
 .backdrop.is-hidden {
   opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  visibility: hidden;
+  pointer-events: none;
 }
 .modal {
   position: absolute;
-  width: 100%;
+  width: 90%;
   max-width: 375px;
   max-height: 903px;
   padding: 20px;
@@ -72,11 +72,39 @@
   align-items: center;
   letter-spacing: -0.04em;
 }
-
+@media screen and (max-width: 480px) {
+  .titel-check-modal {
+     font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .titel-check-modal {
+     font-size: 18px;
+     position: absolute;
+     top:40px
+  }
+}
+@media screen and (min-width: 1280px) {
+  .titel-check-modal {
+    font-size: 24px;
+    line-height: 1.2;
+  
+  }
+}
+@media screen and (min-width: 768px) {
+  .text-check-modal {
+ position: absolute;
+  top: 66px
+  }
+}
+.text-check-modal {
+  position: absolute;
+  
+}
 .label-modal {
   display: block;
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   align-items: center;
   flex-direction: start;
 }
@@ -87,32 +115,83 @@
 }
 
 .pic-fruits-modal {
-  /* justify-content: flex-end; */
-  /* flex-direction: start; */
-}
+  position: absolute; 
+  right: 20px;
+  top: 16px
+  /* display: flex;
+  justify-content: flex-end; */
+  } 
+  @media screen and (min-width: 768px) {
+    .pic-fruits-modal {
+      right: 33px;
+      top: 88px;
+  }
+  .pic{
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    }
+  }
+ 
+  /* @media screen and (min-width: 1280px) {
+    .pic-fruits-modal {
+      right: 42px;
+      top: 14px;
+  }
+  } */
 
 .strawberry-check-modal {
-  max-height: 119px;
+  height: 119px;
+ 
   flex-basis: auto;
   padding: 16px 32px 8px 20px;
   background: #f8766b;
   border-radius: 20px;
 }
-
+@media screen and (min-width: 768px) {
+  .strawberry-check-modal {
+    height: 250px;
+}
+}
+@media screen and (min-width: 1280px) {
+  .strawberry-check-modal {
+    height: 308px;
+}
+}
 .apple-check-modal {
-  max-height: 119px;
+  height: 119px;
   flex-basis: auto;
   padding: 16px 32px 8px 20px;
   background: #edd251;
   border-radius: 20px;
 }
+@media screen and (min-width: 768px) {
+  .apple-check-modal {
+    height: 250px;
+}
+}
+@media screen and (min-width: 1280px) {
+  .apple-check-modal {
+    height: 308px;
+}
+}
 
 .mix-check-modal {
-  max-height: 119px;
+  height: 119px;
   flex-basis: auto;
   padding: 16px 32px 8px 20px;
   background: #9dc262;
   border-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  .mix-check-modal {
+    height: 250px;
+}
+}
+@media screen and (min-width: 1280px) {
+  .mix-check-modal {
+    height: 308px;
+}
 }
 
 /* ----------------Input-modal--------------------- */
