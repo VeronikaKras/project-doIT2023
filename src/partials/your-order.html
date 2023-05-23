@@ -138,6 +138,7 @@
           type="text"
           name="name"
           placeholder="Enter full name..."
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
           required
           class="input-modal"
         />
@@ -145,11 +146,12 @@
           type="email"
           name="mail"
           placeholder="Enter email..."
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           required
           class="input-modal"
         />
         <input
-          type="text"
+          type="number"
           pattern="[0-9]{13,19}"
           inputmode="numeric"
           placeholder="Enter card..."
@@ -164,22 +166,5 @@
         <button type="submit" class="button-submit">Submit</button>
       </div>
     </form>
-    <picture class="banana-girl">
-      <source
-        srcset="
-          ./img/your-order/banan-girl-desk@1x.png 1x,
-          ./img/your-order/banan-girl-desk@2x.png 2x
-        "
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="
-          ./img/your-order/banan-girl-tablet@1x.png 1x,
-          ./img/your-order/banan-girl-tablet@2x.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <img src="./img/your-order/banan-girl-desk@1x.png 1x" alt="smile-girl" />
-    </picture>
   </div>
 </div>
