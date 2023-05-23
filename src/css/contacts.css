@@ -1,7 +1,7 @@
-.container {
+/* .container {
   outline: 2px solid white;
   outline-offset: -2px;
-}
+} */
 .contacts-section {
   padding-bottom: 80px;
   padding-top: 80px;
@@ -40,6 +40,7 @@
   width: 335px;
   height: 476px;
   border-radius: 20px;
+  
   overflow: hidden;
 }
 .blueberry-img {
@@ -118,9 +119,7 @@
     outline: 1px solid var(--white-color);
     outline-offset: -1px;
   }
-  .contacts-email-input:invalid {
-    outline: 1px solid red;
-  }
+  
   .contacts-email-btn {
     position: absolute;
     top: 0;

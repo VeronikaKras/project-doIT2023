@@ -83,10 +83,12 @@
               name="user_email"
               placeholder="Enter email..."
               pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
             />
           </label>
           <button
-            class="contacts-email-btn js-open-modal"
+            data-menu-open
+            class="contacts-email-btn"
             data-modal="2"
             type="submit"
           >
