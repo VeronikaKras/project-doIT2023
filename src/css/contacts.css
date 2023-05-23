@@ -119,9 +119,7 @@
     outline: 1px solid var(--white-color);
     outline-offset: -1px;
   }
-  .contacts-email-input:invalid {
-    outline: 1px solid red;
-  }
+  
   .contacts-email-btn {
     position: absolute;
     top: 0;
