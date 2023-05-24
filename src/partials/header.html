@@ -31,12 +31,6 @@
       </a>
     </div>
 
-    <!-- <button class="icon-cart" type="button" hreh="#fruits">
-      <svg width="28" height="28">
-        <use href="./img/icon.svg#icon-uil-cart"></use>
-      </svg>
-    </button> -->
-
     <button
       class="menu-toggle js-open-menu"
       aria-expanded="false"
@@ -52,39 +46,44 @@
 
 <div class="menu-container-mobile js-menu-container" id="mobile-menu">
   <div class="menu-mobile-logo">
-    <ul class="menu-logo">
-      <li class="icon-header">
-        <a class="icon-vector" href="">
-          <svg width="16" height="16">
-            <use href="./img/icon.svg#icon-vector-1"></use>
-          </svg>
-          <p class="header-text">fresh harvest box</p>
-        </a>
-      </li>
-    </ul>
-    <button class="menu-toggle js-close-menu">
-      <svg width="24" height="24">
-        <use href="./img/icon.svg#icon-X"></use>
-      </svg>
-    </button>
+    <!-- add div menu-mobile-wrap -->
+    <div class="menu-mobile-wrap">
+      <ul class="menu-logo">
+        <li class="icon-header">
+          <a class="icon-vector" href="">
+            <svg width="16" height="16">
+              <use href="./img/icon.svg#icon-vector-1"></use>
+            </svg>
+            <p class="header-text">fresh harvest box</p>
+          </a>
+        </li>
+      </ul>
+      <button class="menu-toggle js-close-menu">
+        <svg width="24" height="24">
+          <use href="./img/icon.svg#icon-X"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 
   <nav>
     <ul class="mobile-menu">
       <li>
-        <a href="#howitworks">How It Works</a>
+        <a class="js-link" href="#howitworks">How It Works</a>
       </li>
       <li>
-        <a href="#contacts">Fruits</a>
+        <a class="js-link" href="#fruits">Fruits</a>
       </li>
       <li>
-        <a href="#contacts">Contacts</a>
+        <a class="js-link" href="#contacts">Contacts</a>
       </li>
     </ul>
   </nav>
-  <button class="mobile-btn" type="button">
-    <svg width="28" height="28">
-      <use href="./img/icon.svg#icon-Vector"></use>
-    </svg>
-  </button>
+  <div class="mobile-btn">
+    <a class="js-link" href="#fruits">
+      <svg width="28" height="28">
+        <use href="./img/icon.svg#icon-Vector"></use>
+      </svg>
+    </a>
+  </div>
 </div>
