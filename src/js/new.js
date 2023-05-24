@@ -1,9 +1,10 @@
 const MODAL_ACTIVE_CLASS_NAME = 'active';
 const thankModal = document.querySelector('.modal-thank-you');
-const form = document.querySelector('.thank-form');
+const form = document.querySelector('.contacts-form');
 const backdrop = document.querySelector('.overlay');
 const closeBtns = document.querySelectorAll('.close-btn');
-const input = document.querySelector('.feedback-email');
+const input = document.querySelector('.contacts-email-input');
+console.log('first');
 const openSuccessModal = () => {
   thankModal.classList.add(MODAL_ACTIVE_CLASS_NAME);
   backdrop.classList.add(MODAL_ACTIVE_CLASS_NAME);
@@ -21,7 +22,8 @@ closeBtns.forEach(btn => {
   });
 });
 form.addEventListener('submit', e => {
+  console.log(thankModal, form, backdrop, closeBtns, input);
   e.preventDefault();
   setTimeout(openSuccessModal, 300);
-    setTimeout(closeSuccessModal, 2400);
+  setTimeout(closeSuccessModal, 2400);
 });
