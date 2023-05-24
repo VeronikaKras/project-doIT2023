@@ -40,7 +40,6 @@
   width: 335px;
   height: 476px;
   border-radius: 20px;
-  
   overflow: hidden;
 }
 .blueberry-img {
@@ -119,7 +118,9 @@
     outline: 1px solid var(--white-color);
     outline-offset: -1px;
   }
-  
+  .contacts-email-input:invalid {
+    outline: 1px solid red;
+  }
   .contacts-email-btn {
     position: absolute;
     top: 0;

@@ -1,5 +1,4 @@
 /* Modal Your Order */
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -10,13 +9,17 @@
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-  /* transition: opacity 250ms linear, visibility 250ms linear; */
+  transition: opacity 250ms linear, visibility 250ms linear;
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0.9);
 }
 
 .modal {
@@ -54,6 +57,13 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (min-width: 768px) {
+  .titel-modal {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}
+
 .close-modal {
   position: absolute;
   top: 22px;
@@ -78,12 +88,6 @@
   letter-spacing: -0.04em;
 }
 
-@media screen and (max-width: 480px) {
-  .titel-check-modal {
-    font-size: 14px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .titel-check-modal {
     font-size: 18px;
@@ -101,8 +105,13 @@
 
 @media screen and (min-width: 768px) {
   .text-check-modal {
-    position: absolute;
     top: 66px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .text-check-modal {
+    top: 76px;
   }
 }
 
@@ -118,7 +127,10 @@
   flex-direction: start;
 }
 
-
+/* .wrap-card-modal-text {
+  display: flex;
+  flex-direction: column;
+} */
 .pic-fruits-modal {
   position: absolute;
   right: 20px;
@@ -218,7 +230,6 @@
 
 .input-modal {
   display: block;
-  font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   line-height: 1.29;
   font-weight: 400;
@@ -229,10 +240,15 @@
   width: 100%;
   height: 46px;
   margin-bottom: 14px;
-  /* opacity: 0.3; */
   border: 1px solid rgba(0, 0, 0, 0.3);
   background-color: transparent;
   border-radius: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .input-modal {
+    height: 48px;
+  }
 }
 
 .wrap-input-modal {
@@ -277,6 +293,18 @@
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .textarea-modal {
+    height: 145px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .mix-check-modal {
+    height: 308px;
+  }
+}
+
 .textarea-modal::placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -289,12 +317,17 @@
   outline-offset: -1px;
 }
 
-/* .input-modal:invalid {
-  outline: 1px solid red;
-} */
+.input-modal:not(:focus):not(:placeholder-shown):valid {
+  background-color: var(--green-color);
+}
+
+.input-modal:not(:focus):not(:placeholder-shown):invalid {
+  outline: 2px solid var(--red-color);
+}
+
 .button-submit {
   display: block;
-  padding: 15px 35px;
+  padding: 12px 24px;
   background: var(--green-color);
   border-radius: 100px;
   border: 1px solid transparent;
@@ -304,6 +337,12 @@
     background-color var(--transition-dur-and-func);
 }
 
+@media screen and (min-width: 768px) {
+  .button-submit {
+    padding: 15px 35px;
+  }
+}
+
 .button-submit:hover,
 .button-submit:focus {
   border: 1px solid var(--green-color);
@@ -311,17 +350,11 @@
   color: var(--green-color);
 }
 
-@media screen and (max-width: 767px) {
-  .banana-girl {
-    display: none;
-  }
-}
-
 /* ----------------Check box----------------------- */
 .chek-lists-modal {
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
+  gap: 12px;
   margin-bottom: 40px;
 }
 
@@ -332,9 +365,55 @@
 .check-modal {
   display: flex;
   position: absolute;
+  top: 37px;
+  right: 15px;
+}
+
+.icon-unchecked {
+  opacity: 1;
+}
+
+.check-modal:checked+.check-icon>.icon-unchecked {
+  opacity: 0;
+}
+
+.icon-chekd {
+  opacity: 0;
+}
+
+.check-modal:checked+.check-icon>.icon-chekd {
+  opacity: 1;
+}
+
+/* .icon-unchecked-tablet {
+  opacity: 1;
+}
+.check-modal:checked + .check-icon-tablet > .icon-unchecked-tablet {
+  opacity: 0;
+}
+.icon-chekd-tablet {
+  opacity: 0;
+}
+.check-modal:checked + .check-icon-tablet > .icon-chekd-tablet {
+  opacity: 1;
+} */
+.check-icon,
+.check-icon-tablet {
+  position: absolute;
   top: 14px;
   right: 14px;
 }
+
+/* @media screen and (min-width: 768px) {
+  .check-icon {
+    display: none;
+  }
+} */
+/* @media screen and (max-width: 767px) {
+  .check-icon-tablet {
+    display: none;
+  }
+} */
 
 @media screen and (min-width: 768px) {
   .container {
@@ -343,6 +422,9 @@
     padding-right: 32px;
   }
 
+       /* .check-icon {
+      display: none;
+    } */
   .backdrop {
     background-color: rgba(46, 47, 66, 0.4);
   }
@@ -351,22 +433,27 @@
     max-height: 853px;
     max-width: 753px;
     padding: 40px;
+    background-image: url(../img/your-order/banan-girl-tablet@1x.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0 right 0;
+    background-size: 290px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .modal {
+      background-image: url(../img/your-order/banan-girl-tablet@2x.png);
+    }
   }
 
   .chek-lists-modal {
     /* justify-content: center; */
     flex-direction: row;
-    gap: 12px;
   }
 
   .check-check {
     flex-basis: calc((100% - 24px) / 2);
-  }
-
-  .banana-girl {
-    position: absolute;
-    bottom: 0;
-    right: 0;
   }
 }
 
@@ -379,5 +466,21 @@
     max-height: 911px;
     max-width: 891px;
     padding: 40px;
+    background-image: url(../img/your-order/banan-girl-desk@1x.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0 right 0;
+    background-size: 471px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .modal {
+      background-image: url(../img/your-order/banan-girl-desk@2x.png);
+    }
+  }
+
+  .chek-lists-modal {
+    gap: 20px;
   }
 }
