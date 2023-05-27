@@ -224,9 +224,10 @@
   transition: color var(--transition-dur-and-func),
     background-color var(--transition-dur-and-func);
 
-    -webkit-animation: heartbeat 5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s infinite reverse;
-      animation: heartbeat 5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s infinite reverse;
-
+  -webkit-animation: heartbeat 5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s
+    infinite reverse;
+  animation: heartbeat 5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s infinite
+    reverse;
 }
 
 @-webkit-keyframes heartbeat {
