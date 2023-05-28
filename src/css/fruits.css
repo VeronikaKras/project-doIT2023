@@ -99,6 +99,15 @@
   }
 }
 
+.fruits-cards {
+  transition: transform var(--transition-dur-and-func);
+}
+
+.fruits-item:hover .fruits-cards,
+.fruits-item:focus .fruits-cards {
+  transform: scale(1.1);
+}
+
 .fruits-item:nth-child(2) {
   background-color: rgba(237, 210, 81, 1);
 }
@@ -224,9 +233,10 @@
   transition: color var(--transition-dur-and-func),
     background-color var(--transition-dur-and-func);
 
-    -webkit-animation: heartbeat 5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s infinite reverse;
-      animation: heartbeat 5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s infinite reverse;
-
+  -webkit-animation: heartbeat 5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s
+    infinite reverse;
+  animation: heartbeat 5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s infinite
+    reverse;
 }
 
 @-webkit-keyframes heartbeat {
@@ -311,7 +321,7 @@
 .order-button:focus {
   color: var(--green-color);
   background-color: rgba(255, 255, 255, 1);
-
+  animation-play-state: paused;
   text-transform: rotate(-14deg);
 }
 
