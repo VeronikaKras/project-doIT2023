@@ -150,10 +150,13 @@
   }
 }
 
+.social-item-link:hover,
+.social-item-link:focus {
+  background-color: rgba(174, 19, 50, 0.1);
+}
+
 .social-item-link:hover .social-item-icon,
 .social-item-link:focus .social-item-icon {
-  background-color: rgba(174, 19, 50, 0.1);
-
   animation: wobble-hor-bottom 1.5s both;
 }
 
