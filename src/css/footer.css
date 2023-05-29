@@ -150,9 +150,34 @@
   }
 }
 
-.social-item-link:hover,
-.social-item-link:focus {
+.social-item-link:hover .social-item-icon,
+.social-item-link:focus .social-item-icon {
   background-color: rgba(174, 19, 50, 0.1);
+
+  animation: wobble-hor-bottom 1.5s both;
+}
+
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-10px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(6px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-6px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(4px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-2px) rotate(-1.2deg);
+  }
 }
 
 .footer-contacts {
