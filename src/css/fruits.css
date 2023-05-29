@@ -82,37 +82,15 @@
 .fruits-item {
   position: relative;
 
+  display: flex;
+  flex-wrap: wrap;
+
   width: 335px;
   height: 465px;
   background-color: rgba(248, 118, 107, 1);
 
   border-radius: 20px;
-
-  /* animation-name: changeposition;
-  animation-duration: 2000ms; */
-
-  /* transform: scale(0);
-
-  animation: rotate-scale-down-diag-1 0.8s linear both;
-  animation-timeline: rotate-scale-down-diag-1; */
 }
-
-/* @keyframes rotate-scale-down-diag-1 {
-  0% {
-    -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
-  }
-  50% {
-    -webkit-transform: scale(0.5) rotate3d(1, 1, 0, -180deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotate3d(1, 1, 0, -360deg);
-  }
-}
-@scroll-timeline rotate-scale-down-diag-1 {
-  time-range: 1s;
-  start: selector(#fruits-item) end 0;
-  end: selector(#fruits-item) start 1;
-} */
 
 @media only screen and (min-width: 768px) {
   .fruits-item {
@@ -151,29 +129,24 @@
 }
 
 .fruits-top {
-  position: absolute;
-  top: 64px;
-  left: 24px;
-
+  padding-top: 64px;
+  padding-left: 24px;
   margin-bottom: 4px;
 }
 
 .fruits-cards {
-  position: absolute;
-  top: 126px;
-  left: 20px;
+  padding-left: 20px;
+  padding-bottom: 6px;
 }
 
 @media screen and (min-width: 768px) {
   .fruits-cards {
-    position: absolute;
-    top: 136px;
-    left: 24.5px;
+    padding-left: 25px;
   }
 }
 @media screen and (min-width: 1280px) {
   .fruits-cards {
-    left: 47px;
+    padding-left: 47px;
   }
 }
 
