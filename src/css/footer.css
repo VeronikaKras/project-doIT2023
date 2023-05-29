@@ -184,3 +184,27 @@
 .footer-contacts-item:focus {
   transform: scale(1.1);
 }
+
+.go-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  border: 1px solid var(--red-color);
+}
+
+.go-top:hover .go-top-icon,
+.go-top:focus .go-top-icon {
+  transform: scale(1.2);
+}
+
+.go-top-icon {
+  fill: var(--red-color);
+  transition: transform var(--transition-dur-and-func);
+}

@@ -1,6 +1,7 @@
 .header-page {
   background-color: var(--white-color);
 }
+
 .header-text-nav {
   display: flex;
   align-items: center;

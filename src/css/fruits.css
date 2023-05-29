@@ -103,6 +103,15 @@
   }
 }
 
+.fruits-cards {
+  transition: transform var(--transition-dur-and-func);
+}
+
+.fruits-item:hover .fruits-cards,
+.fruits-item:focus .fruits-cards {
+  transform: scale(1.1);
+}
+
 .fruits-item:nth-child(2) {
   background-color: rgba(237, 210, 81, 1);
 }
@@ -311,7 +320,7 @@
 .order-button:focus {
   color: var(--green-color);
   background-color: rgba(255, 255, 255, 1);
-
+  animation-play-state: paused;
   text-transform: rotate(-14deg);
 }
 

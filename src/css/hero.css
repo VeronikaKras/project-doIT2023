@@ -25,9 +25,9 @@
   text-transform: uppercase;
 }
 @media only screen and (min-width: 375px) {
-.hero-title {
-  width: 335px;
-}
+  .hero-title {
+    width: 335px;
+  }
 }
 
 /* Image */
@@ -71,8 +71,10 @@
   cursor: pointer;
   transition: color var(--transition-dur-and-func);
 
-  -webkit-animation: heartbeat 5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s infinite reverse;
-    animation: heartbeat 5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s infinite reverse;
+  -webkit-animation: heartbeat 5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s
+    infinite reverse;
+  animation: heartbeat 5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s infinite
+    reverse;
 }
 
 @-webkit-keyframes heartbeat {
@@ -156,6 +158,7 @@
 .hero-btn:hover,
 .hero-btn:focus {
   color: var(--green-color);
+  animation-play-state: paused;
 }
 
 .hero-desk {
